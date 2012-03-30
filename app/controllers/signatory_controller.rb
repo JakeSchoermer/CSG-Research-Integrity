@@ -1,6 +1,7 @@
 class SignatoryController < ApplicationController
   
   def list
+    
   end
   
   def show

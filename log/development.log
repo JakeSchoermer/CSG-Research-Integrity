@@ -1,0 +1,362 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-13 13:49:52 +1000
+Served asset /rails.png - 200 OK (6ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-30 19:36:38 +1000
+Served asset /rails.png - 200 OK (223ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-30 20:14:01 +1000
+Served asset /rails.png - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (3.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120313035232')
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("signatories")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "signatories"
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120313035232'[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "submission_time" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity", :submission_time=>2012-03-30 20:45:40 +1000}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity", :submission_time=>2012-03-30 20:45:40 +1000}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "submission_time" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity", :submission_time=>1333104418}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity", :submission_time=>1333104418}
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "submission_time" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity", :submission_time=>2012-03-30 20:47:10 +1000}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity", :submission_time=>2012-03-30 20:47:10 +1000}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net", :student_id=>"s4233158", :affiliation=>"UNDERGRAD", :message=>"Support Research Integrity"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net"}
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net"}
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120313035232')[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("signatories")[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "signatories"
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120313035232'[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer", :email=>"jake@secretservers.net"}
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128), "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128), "student_id" varchar(8), "affiliation" varchar(32), "message" text, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Posts (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Posts (20120313035232)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Posts (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128), "student_id" varchar(8), "affiliation" varchar(32), "message" text, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer"}
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32), "lname" varchar(64), "email" varchar(128), "student_id" varchar(8), "affiliation" varchar(32), "message" text, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1m{:lname=>"Schoermer"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:lname=>"Schoermer"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128), "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1m{:fname=>"Jake", :lname=>"Schoermer"}[0m
+SQLite3::SQLException: unrecognized token: "{": {:fname=>"Jake", :lname=>"Schoermer"}
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to Signatories (20120313035232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "signatories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(32) NOT NULL, "lname" varchar(64) NOT NULL, "email" varchar(128) NOT NULL, "student_id" varchar(8), "affiliation" varchar(32), "message" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120313035232')[0m
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("signatories")[0m
