@@ -1,4 +1,13 @@
 CSGResearchIntegrity::Application.routes.draw do
+  
+  resources :signatories
+
+  resources :signatory
+  
+  get "home/index"
+
+  root :to => "home#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
