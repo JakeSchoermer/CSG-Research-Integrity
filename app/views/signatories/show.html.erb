@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b> fname:</b>
+  <%= @signatory. fname %>
+</p>
+
+<p>
+  <b>Lname:</b>
+  <%= @signatory.lname %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @signatory.email %>
+</p>
+
+<p>
+  <b>Student:</b>
+  <%= @signatory.student_id %>
+</p>
+
+<p>
+  <b>:</b>
+  <%= @signatory.affiliation %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @signatory.message %>
+</p>
+
+
+<%= link_to 'Edit', edit_signatory_path(@signatory) %> |
+<%= link_to 'Back', signatories_path %>
