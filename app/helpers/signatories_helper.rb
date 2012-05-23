@@ -1,0 +1,2 @@
+module SignatoriesHelper
+end
