@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :fname %><br />
+    <%= f.label "First Name" %><br />
     <%= f.text_field :fname %>
   </div>
   <div class="field">
-    <%= f.label :lname %><br />
+    <%= f.label "Last Name" %><br />
     <%= f.text_field :lname %>
   </div>
   <div class="field">
@@ -24,12 +24,15 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :student_id %><br />
-    <%= f.text_field :student_id %>
+  <label>ID</label><br />
+  <%= f.text_field :student_id %><br />
+  <sub>Your UQ Staff or Student ID (if Applicable)</sub>
+
   </div>
   <div class="field">
     <%= f.label :affiliation %><br />
-    <%= f.text_field:affiliation %>
+    <%= select_tag "signatory[affiliation]", "<option value='UNDERGRAD'>UQ Undergrad</option><option value='POSTGRAD'>
+    UQ Postgrad</option><option value='STAFF'>UQ Staff Member</option><option value='OTHER'>Non-UQ</option>".html_safe%>
   </div>
   <div class="field">
     <%= f.label :message %><br />

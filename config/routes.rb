@@ -2,7 +2,6 @@ CSGResearchIntegrity::Application.routes.draw do
   
   resources :signatories
 
-  resources :signatory
   
   get "home/index"
 
