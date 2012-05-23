@@ -8328,3 +8328,90 @@ Processing by SignatoriesController#index as HTML
   [1m[36mSignatory Load (247.2ms)[0m  [1mSELECT `signatories`.* FROM `signatories` [0m
   Rendered signatories/index.html.erb within layouts/application (3.0ms)
 Completed 200 OK in 626ms (Views: 300.3ms | ActiveRecord: 247.2ms)
+
+
+Started GET "/signatories" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Processing by SignatoriesController#index as HTML
+  [1m[35mSignatory Load (38.3ms)[0m  SELECT `signatories`.* FROM `signatories` 
+  Rendered signatories/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 61ms (Views: 21.6ms | ActiveRecord: 38.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signatories.css?body=1" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Served asset /signatories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signatories.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Served asset /signatories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:07 +1000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signatories/1" for 127.0.0.1 at 2012-05-23 14:56:08 +1000
+Processing by SignatoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSignatory Load (115.5ms)[0m  [1mSELECT `signatories`.* FROM `signatories` WHERE `signatories`.`id` = 1 LIMIT 1[0m
+  Rendered signatories/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 167ms (Views: 49.7ms | ActiveRecord: 115.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-23 14:56:09 +1000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-23 14:56:09 +1000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signatories.css?body=1" for 127.0.0.1 at 2012-05-23 14:56:09 +1000
+Served asset /signatories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-23 14:56:09 +1000
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:09 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:09 +1000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:09 +1000
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signatories.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:09 +1000
+Served asset /signatories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-23 14:56:09 +1000
+Served asset /application.js - 304 Not Modified (0ms)
