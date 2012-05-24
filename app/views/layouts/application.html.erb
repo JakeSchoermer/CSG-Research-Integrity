@@ -14,8 +14,20 @@
 	
 	<div id="page-wrapper">
 			
+		<nav><ul>
+			<li><a href="">The Problem</a></li>
+			<li><a href="">Centre for Coal Seam Gas</a></li>
+			<li><a href="">Us</a></li>
+			<li><a href="">Fracking</a></li>
+			<li><a href="">Media Contact</a></li>
+			<li><%=link_to "Sign the Petition", {:controller => "signatories", :action => "new"}%></li>
+		</ul></nav>
+			
 		<content>
-		
+
+			<p class="notice"><%= notice %></p>
+		  <p class="alert"><%= alert %></p>
+			
 			<%= yield %>
 		
 		</content>
@@ -24,7 +36,7 @@
 
 	<footer>
 		<div id="footer-left">
-			<p>This petition is an initiative of the UQ Environment Collective</p>
+			<p>The Research Integrity Coalition is an initiative of the UQEnvironment Collective and UQ Climate for Change.  </p>
 		</div> <!--End #footer-left -->
 		<div id ="footer-right">
 			<p>Site by <%= mail_to "jake@secretservers.net", "Jake Schoermer" %></p>

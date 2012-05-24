@@ -1,6 +1,10 @@
 class SignatoriesController < ApplicationController
   # GET /signatories
   # GET /signatories.json
+  
+  respond_to :html, :xml
+  before_filter :authenticate_user!, :only => [:index]
+  
   def index
     @signatories = Signatory.all
 
