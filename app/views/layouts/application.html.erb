@@ -9,31 +9,47 @@
   <%= yield(:head) %>
 </head>
 <body>
+	
+	
+	<%if admin_signed_in?%>
+		<div id="admin_bar">
+			<ul class="left">
+				<li class="bold">Admin Bar</li>
+				<li><%= link_to "List Signatories", {:controller => "signatories", :action => "index", }%></li>
+				<li><%= link_to "List Pages", {:controller => "pages", :action => "index"}%></li>
+			</ul>
+			<ul class="right">
+				<li>Logout
+	      <!--link_to 'Sign out', destroy_user_session_path, :method => :delete -->
+				</li>
+			</ul>
+		</div>
+	<%end%>
+	
 	<div id="page-wrapper">
 	
 	<div id="admin-logon">
-	<%if admin_signed_in?%>
-	    Logout
-        <!--link_to 'Sign out', destroy_user_session_path, :method => :delete -->
-	<%else%>
+	<%if !admin_signed_in?%>	
 		<%= link_to 'Sign in', "/admin_user/login" %>
 	<%end%>
 		
 	</div>
 	
 	<header>
-		<h1><%= link_to "Support Research Integrity at UQ", "/" %></h1>
+		<%= link_to image_tag("header.png"), {:controller => "home", :action => "index"}%>
 	</header>
-
 			
-		<nav><ul>
-			<li><a href="">The Problem</a></li>
-			<li><a href="">Centre for Coal Seam Gas</a></li>
-			<li><a href="">Us</a></li>
-			<li><a href="">Fracking</a></li>
-			<li><a href="">Media Contact</a></li>
-			<li><%=link_to "Sign the Petition", {:controller => "signatories", :action => "new"}%></li>
-		</ul></nav>
+		<nav>
+			<ul>
+				<li><a href="">The Problem</a></li>
+				<li><a href="">Centre for Coal Seam Gas</a></li>
+				<li><a href="">Us</a></li>
+				<li><a href="">Fracking</a></li>
+				<li><a href="">Media Contact</a></li>
+				<li><%=link_to "Sign the Petition", {:controller => "signatories", :action => "new"}%></li>
+			</ul>
+			<%= image_tag("socialmedia-icons/facebook.png", :size =>"64x64", :alt => "Facebook Campaign Page", :id=>"facebook_icon")%>
+		</nav>
 			
 		<div id="content">
 

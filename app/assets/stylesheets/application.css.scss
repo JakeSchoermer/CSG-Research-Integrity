@@ -16,6 +16,22 @@ $lime-green:#4f9000;
 $lime-green-pale:#93c05c;
 $gray:#666;
 
+//============================ @Font Face ======================================
+
+@font-face {
+    font-family: 'LeanderRegular';
+    src: url('../fonts/leander/Leander-webfont.eot');
+    src: url('../fonts/leander/Leander-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leander/Leander-webfont.woff') format('woff'),
+         url('../fonts/leander/Leander-webfont.ttf') format('truetype'),
+         url('../fonts/leander/Leander-webfont.svg#LeanderRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//=============================================================================
+
 html, body {
     background-position:center;
     background-attachment:fixed;
@@ -30,45 +46,121 @@ div#page-wrapper {
 	margin:0 auto;
 }
 
-header {
-	text-align:center;
-	height:75px;
-	width:960px;
-	margin:0 auto;
-	background-color:white;
+div#admin_bar {
+	height:20px;
+	width:100%;
+	background-color:black;
+	color:white;
+
+	ul.left {
+		width:1000px;
+		float:left;
+		margin:0;
+		list-style:none;
+		text-align:left;
+		li:after {
+			content:" | "
+		}		
+		li {
+			display:inline;
+			color:white;
+			a {
+				color:white;
+				text-decoration:none;
+			}
+			a:hover {
+				color:gray;
+			}
+		}
+	}
+	ul.right {
+		width:200px;
+		float:right;
+		margin:0;
+		list-style:none;
+		text-align:right;		
+		li {
+			display:inline;
+			color:white;
+			a {
+				color:white;
+				text-decoration:none;
+			}
+		}
+	}
 }
 
+
+header {
+	text-align:center;
+	height:150px;
+	width:960px;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+
+
 nav {
+
+	
     background-image:url('nav_ribbon.png');
     background-position:center;
     background-repeat:none;
     width:960px;
     height:54px;
 	margin-bottom:10px;
-
+	
+	ul:last-child:after {
+		content:' ';
+	}
+	
     ul {
-        margin:0px 50px 0px 50px;
+        margin-top:0px;
+		margin-left:50px;
+		text-align:left;
         list-style:none;
         padding-top:8px;
-
+        font-size:16px;
+		li:after {
+			content:" | ";
+		}		
         li {
             display:inline;
+			font-family:LeanderRegular, Helvetica, Arial, sans-serif;
             a {
-                color:white;
+                color:black;
+				text-decoration:none;
+				
             }
             a:visited {
-                color:white;
+                color:black;
             }
-            font-size:18px;
+			a:hover {
+				color:white;
+			}
         }
     }
+	img#facebook_icon {
+		position:relative;
+		float:right;
+		top:-80px;
+		left:-100px;
+		z-index:2;
+	}
 }
 
 div#content {
 	background-color:white;
-	width:950px;
+	width:830px;
 	min-height:200px;
-	margin:100px, 0px, 10px, 0px;
+
+	
+	margin-top:-20px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	
 	padding:10px 5px 10px 5px;
 
 }
@@ -76,7 +168,7 @@ div#content {
 footer {
 	position: absolute;
 	margin-top:50px;/* negative value of footer height */
-	height: 100px;
+	height: 110px;
 	clear:both;
 	width:100%;
 
@@ -89,7 +181,7 @@ footer {
 		margin:0 auto;
 		
 		div.footer-section {
-			height:-100px;
+			min-height:110px;
 			width:306px;			
 		}	
 		

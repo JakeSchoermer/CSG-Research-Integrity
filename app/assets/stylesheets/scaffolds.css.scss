@@ -15,7 +15,7 @@ pre {
   padding: 10px;
   font-size: 11px; }
 
-a {
+div#content a, div#admin_bar a, footer a{
   color: #000;
   &:visited {
     color: #000; }
