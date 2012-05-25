@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CSGResearchIntegrity</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <%= csrf_meta_tag %>
+
+  <%= yield(:head) %>
 </head>
 <body>
 	<div id="page-wrapper">
+	
+	<div id="admin-logon">
+	<%if admin_signed_in?%>
+	    Logout
+        <!--link_to 'Sign out', destroy_user_session_path, :method => :delete -->
+	<%else%>
+		<%= link_to 'Sign in', "/admin_user/login" %>
+	<%end%>
+		
+	</div>
+	
 	<header>
 		<h1><%= link_to "Support Research Integrity at UQ", "/" %></h1>
 	</header>
@@ -22,29 +35,30 @@
 			<li><%=link_to "Sign the Petition", {:controller => "signatories", :action => "new"}%></li>
 		</ul></nav>
 			
-		<content>
+		<div id="content">
 
 			<p class="notice"><%= notice %></p>
 		  <p class="alert"><%= alert %></p>
 			
 			<%= yield %>
 		
-		</content>
+		</div>
 
-        </div> <!-- End #page-wrapper -->
+  </div> <!-- End #page-wrapper -->
 
 	<footer>
 		<div id="footer-inner">		
-			<div id="footer-left" class="footersection">
+			<div id="footer-left" class="footer-section">
 				<p>The Research Integrity Coalition is an initiative of the UQ Environment Collective and
 				<%= link_to "UQ Climate for Change", "http://www.uqclimateforchange.org" %>.  </p>
 			</div> <!--End #footer-left -->
 		
-			<div id="footer-middle" class="footersection">
+			<div id="footer-middle" class="footer-section">
 				<p>Site by <%= mail_to "jake@secretservers.net", "Jake Schoermer" %></p>
 			</div> <!-- End #footer-middle-->
-			<div id ="footer-right" class="footersection">
-				<%= image_tag "images/uqcfc-logo.jpg"%>
+			<div id ="footer-right" class="footer-section">
+				<%= image_tag "uqenvirocollective-logo-small.png"%>
+				<%= image_tag "uqcfc-logo-b&w-small.png"%>
 			</div> <!-- End #footer-right-->
 		</div> <!-- End #footer-inner-->
 	</footer>

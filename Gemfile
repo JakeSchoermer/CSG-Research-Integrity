@@ -24,12 +24,14 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'nifty-generators'
 end
 
 
 
 gem 'jquery-rails'
-gem 'devise'
+gem 'devise', '~> 1.4.9'
+gem "tinymce_hammer", "~> 0.2.2"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -45,3 +47,5 @@ gem 'devise'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem "mocha"
