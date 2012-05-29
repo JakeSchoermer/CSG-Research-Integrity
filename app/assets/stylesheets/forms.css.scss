@@ -1,0 +1,68 @@
+	
+	form {
+		background-color:black;
+		padding:1em;
+		
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	
+	form, form{
+		margin:1em 0;
+		color:#fff;
+		width:600px; /* customize width, this form have fluid layout */
+		margin: 0 auto;
+		}
+	form h3{
+		margin:0;
+		background:#57a700 url("form2/form_heading.gif") repeat-x;		
+		color:#fff;
+		
+		font-size:20px;
+		border:1px solid #57a700;
+		border-bottom:none;
+		}		
+	form h3 span{
+		display:block;
+		padding:10px 20px;
+		background:url("form2/form_ico.gif") no-repeat 93% 50%;			
+		}				
+	form fieldset{
+		margin:0;
+		padding:0;
+		border:none;	
+		border-top:3px solid #000;
+		background:#000 url("form2/form_top.gif") repeat-x;		
+		padding-bottom:1em;
+		}		
+	form legend{display:none;}	
+	form p{margin:.5em 20px;}	
+	form label{display:block;}	
+	form input, form textarea{		
+		width:272px;
+		border:1px solid #111;
+		background:#282828 url("form2/form_input.gif") repeat-x;
+		padding:5px 3px;
+		color:#fff;
+		}		
+	form textarea{
+		height:125px;
+		overflow:auto;
+		}					
+	form p.submit{
+		text-align:right;
+		}	
+	form button, form input[type="submit"]{
+		padding:0 20px;
+		height:32px;
+		line-height:32px;		
+		border:1px solid #70ad2e;
+		background:#5aae00 url("form2/form_button.gif") repeat-x;
+		color:#fff;
+		cursor:pointer;		
+		text-align:center;
+		
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+				
+		}				

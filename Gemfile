@@ -32,6 +32,7 @@ end
 gem 'jquery-rails'
 gem 'devise', '~> 1.4.9'
 gem "tinymce_hammer", "~> 0.2.2"
+gem 'friendly_id'   #Helps re-write pretty urls
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

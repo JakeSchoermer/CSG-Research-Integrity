@@ -6,15 +6,18 @@ CSGResearchIntegrity::Application.routes.draw do
   resources :pages
 
   devise_for :admins, :path => "admin_user", :path_names => { :sign_in => 'login', :sign_out => 'logout', :password => 'secret', :confirmation => 'verification', :unlock => 'unblock', :registration => 'register', :sign_up => 'create_account' }
-  
-  match '/logout', :to => 'sessions#logout'
+    match '/logout', :to => 'sessions#logout'
+
   
   resources :signatories
 
   
   get "home/index"
 
-  root :to => "home#index"
+  root :to => "home#index", :id => 1;
+  
+  
+  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

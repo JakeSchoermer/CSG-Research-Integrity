@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "Coal Seam Gas | Research Integrity" %></title>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tag %>
-
+	
   <%= yield(:head) %>
+<%= init_tinymce_hammer_if_required %>
 </head>
 <body>
 	
@@ -19,34 +20,25 @@
 				<li><%= link_to "List Pages", {:controller => "pages", :action => "index"}%></li>
 			</ul>
 			<ul class="right">
-				<li>Logout
-	      <!--link_to 'Sign out', destroy_user_session_path, :method => :delete -->
+				<li>
+
 				</li>
 			</ul>
 		</div>
 	<%end%>
 	
 	<div id="page-wrapper">
-	
-	<div id="admin-logon">
-	<%if !admin_signed_in?%>	
-		<%= link_to 'Sign in', "/admin_user/login" %>
-	<%end%>
-		
-	</div>
+
 	
 	<header>
-		<%= link_to image_tag("header.png"), {:controller => "home", :action => "index"}%>
+		<%= link_to image_tag("header.png"), {:controller => "pages", :action => "show", :id => "1"}%>
 	</header>
 			
 		<nav>
 			<ul>
-				<li><a href="">The Problem</a></li>
-				<li><a href="">Centre for Coal Seam Gas</a></li>
-				<li><a href="">Us</a></li>
-				<li><a href="">Fracking</a></li>
-				<li><a href="">Media Contact</a></li>
-				<li><%=link_to "Sign the Petition", {:controller => "signatories", :action => "new"}%></li>
+				<li><%= link_to "Home", {:controller => "pages", :action => "show", :id => "1"} %></li>
+				<li><%= link_to "Media Coverage", {:controller => "pages", :action => "show", :id => "2"}%></li>
+				<li><%= link_to "Sign the Petition", {:controller => "signatories", :action => "new"}%></li>
 			</ul>
 			<%= image_tag("socialmedia-icons/facebook.png", :size =>"64x64", :alt => "Facebook Campaign Page", :id=>"facebook_icon")%>
 		</nav>
@@ -71,10 +63,15 @@
 		
 			<div id="footer-middle" class="footer-section">
 				<p>Site by <%= mail_to "jake@secretservers.net", "Jake Schoermer" %></p>
+                <p>Content &copy; Copyright <%= Date.current.to_s[0...4] %> Research Integrity Coalition </p>
+                <%if !admin_signed_in?%>
+                        <%= link_to 'Admin Logon', "/admin_user/login" %>
+                 <%end%>
+
 			</div> <!-- End #footer-middle-->
 			<div id ="footer-right" class="footer-section">
-				<%= image_tag "uqenvirocollective-logo-small.png"%>
-				<%= image_tag "uqcfc-logo-b&w-small.png"%>
+				<%= image_tag "uqenvirocollective-logo-small.png", size:"80x80"%>
+				<%= image_tag "uqcfc-logo-b&w-small.png", size:"80x80"%>
 			</div> <!-- End #footer-right-->
 		</div> <!-- End #footer-inner-->
 	</footer>

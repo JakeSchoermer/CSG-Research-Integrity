@@ -1,7 +1,5 @@
 body {
   //background-color: #fff;
-  color: #000;
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
 
@@ -27,8 +25,12 @@ div {
   &.field, &.actions {
     margin-bottom: 10px; } }
 
-#notice {
+
+.notice {
   color: green; }
+
+.alert {
+	color:red; }
 
 .field_with_errors {
   padding: 2px;

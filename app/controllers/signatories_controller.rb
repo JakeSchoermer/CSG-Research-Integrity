@@ -5,6 +5,7 @@ class SignatoriesController < ApplicationController
   respond_to :html, :xml
   before_filter :authenticate_admin!, :only => [:index, :show]
   
+  
   def index
     @signatories = Signatory.all
 
@@ -16,6 +17,11 @@ class SignatoriesController < ApplicationController
 
   # GET /signatories/1
   # GET /signatories/1.json
+  
+  def permalink_to(post)
+    post_permalink_path(post.permalink)
+  end
+  
   def show
     @signatory = Signatory.find(params[:id])
 
@@ -48,6 +54,10 @@ class SignatoriesController < ApplicationController
 
     respond_to do |format|
       if @signatory.save
+        
+        
+        
+        
         format.html { redirect_to @signatory, notice: 'Signatory was successfully created.' }
         format.json { render json: @signatory, status: :created, location: @signatory }
       else

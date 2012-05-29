@@ -35,7 +35,7 @@ $gray:#666;
 html, body {
     background-position:center;
     background-attachment:fixed;
-    background-color:#666;
+    background-color:black;
     padding:0;
     margin:0;
     min-width:960px;
@@ -49,11 +49,10 @@ div#page-wrapper {
 div#admin_bar {
 	height:20px;
 	width:100%;
-	background-color:black;
-	color:white;
+	background-color:white;
+	color:black;
 
 	ul.left {
-		width:1000px;
 		float:left;
 		margin:0;
 		list-style:none;
@@ -63,9 +62,9 @@ div#admin_bar {
 		}		
 		li {
 			display:inline;
-			color:white;
+			color:black;
 			a {
-				color:white;
+				color:black;
 				text-decoration:none;
 			}
 			a:hover {
@@ -74,16 +73,15 @@ div#admin_bar {
 		}
 	}
 	ul.right {
-		width:200px;
 		float:right;
-		margin:0;
+		margin:0px 0px 0px 0px;
 		list-style:none;
 		text-align:right;		
 		li {
 			display:inline;
-			color:white;
+			color:black;
 			a {
-				color:white;
+				color:black;
 				text-decoration:none;
 			}
 		}
@@ -162,7 +160,13 @@ div#content {
 	margin-right:auto;
 	
 	padding:10px 5px 10px 5px;
-
+	
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+	
 }
 
 footer {
@@ -177,12 +181,12 @@ footer {
 	
 	div#footer-inner {
 		
-		width:960px;
+		width:830px;
 		margin:0 auto;
 		
 		div.footer-section {
 			min-height:110px;
-			width:306px;			
+			width:263px;			
 		}	
 		
 		div#footer-left {
@@ -197,7 +201,12 @@ footer {
 			float:left;
 			padding-left:10px;
 			padding-right:10px;
-			
+			position:relative;
+			#footer-middle-content {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
 		}
 	
 		div#footer-right {
