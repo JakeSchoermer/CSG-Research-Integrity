@@ -36,8 +36,10 @@
 			
 		<nav>
 			<ul>
-				<li><%= link_to "Home", {:controller => "pages", :action => "show", :id => "1"} %></li>
-				<li><%= link_to "Media Coverage", {:controller => "pages", :action => "show", :id => "2"}%></li>
+				<li><%= link_to "Home", "/pages/home" %></li>
+                <li><%= link_to "About CSG Extraction", "about-csg-extraction"%></li>
+				<li><%= link_to "Media Coverage", "/pages/media-coverage"%></li>
+                <li><%= link_to "Contact", "/pages/contact"%></li>
 				<li><%= link_to "Sign the Petition", {:controller => "signatories", :action => "new"}%></li>
 			</ul>
 			<%= image_tag("socialmedia-icons/facebook.png", :size =>"64x64", :alt => "Facebook Campaign Page", :id=>"facebook_icon")%>
