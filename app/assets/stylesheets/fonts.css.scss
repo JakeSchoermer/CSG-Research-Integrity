@@ -1,5 +1,52 @@
+/* ============== Variables ================ */
+
+$bg-color:#1F1D1D;
+$bg_color-light:#252525;
+$lime-green:#4f9000;
+$lime-green-pale:#93c05c;
+$orange:#fb4800;
+$light-orange:#fbbb00;
+$gray:#999;
+$gray2:#6A6E7F;
+
+ //============================ @Font Face ======================================
+
+@font-face {
+    font-family: 'LeanderRegular';
+    src: url('../fonts/leander/Leander-webfont.eot');
+    src: url('../fonts/leander/Leander-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leander/Leander-webfont.woff') format('woff'),
+         url('../fonts/leander/Leander-webfont.ttf') format('truetype'),
+         url('../fonts/leander/Leander-webfont.svg#LeanderRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//=============================================================================
+
+
 a {border:none} //Removes blue border in IE.
 
+
+//Content
+
+header {
+    font-family:LeanderRegular;
+
+    a {text-decoration:none; color:white}
+    a:hover {color:$orange;}
+}
+
+div#content {
+    h1, h2, h3, h4, h5, h6, a, a:visited {
+        color:$orange;
+    }
+
+    a:hover {
+        color:$light-orange;
+    }
+}
 
 //Font Classes//
 

@@ -13,19 +13,22 @@
 */
 
 $bg-color:#1F1D1D;
+$bg_color-light:#252525;
 $lime-green:#4f9000;
 $lime-green-pale:#93c05c;
-$gray:#666;
+$orange:#fb4800;
+$gray:#999;
+$gray2:#6A6E7F;
 
 //============================ @Font Face ======================================
 
 @font-face {
     font-family: 'LeanderRegular';
-    src: url('../fonts/leander/Leander-webfont.eot');
-    src: url('../fonts/leander/Leander-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/leander/Leander-webfont.woff') format('woff'),
-         url('../fonts/leander/Leander-webfont.ttf') format('truetype'),
-         url('../fonts/leander/Leander-webfont.svg#LeanderRegular') format('svg');
+    src: url('fonts/leander/Leander-webfont.eot');
+    src: url('fonts/leander/Leander-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/leander/Leander-webfont.woff') format('woff'),
+         url('fonts/leander/Leander-webfont.ttf') format('truetype'),
+         url('fonts/leander/Leander-webfont.svg#LeanderRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -90,12 +93,33 @@ div#admin_bar {
 }
 
 
-header {
+/*header {
 	text-align:center;
 	height:150px;
 	width:960px;
 	margin:0 auto;
 	margin-top:10px;
+} */
+
+header {
+    width:100%;
+    height:150px;
+    border-bottom:2px solid $gray;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+
+    /*Cross Browser Colour Gradient*/
+    background: -webkit-gradient(linear, center top, center bottom, from($lime-green-pale), to($lime-green));
+    background: -moz-lineaer(top, $lime-green-pale, $lime-green);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$lime-green', endColorstr='$lime-green-pale');
+
+    div#header-inner {
+        width:830px;
+        height:100%;
+        margin: 0 auto;
+
+    }
 }
 
 
@@ -152,7 +176,8 @@ nav {
 }
 
 div#content {
-	background-color:white;
+
+    color:$gray;
 	width:830px;
 	min-height:200px;
 
@@ -175,14 +200,15 @@ div#content {
 footer {
 	position: absolute;
 	margin-top:50px;/* negative value of footer height */
-	height: 110px;
+	height: 120px;
 	clear:both;
 	width:100%;
 
-    /*Cross Browser Footer Gradient*/
-    background: -webkit-gradient(linear, left top, right bottom, from($lime-green), to($lime-green-pale));
-    background: -moz-lineaer(top, $lime-green, $lime-green-pale);
-    //filter:DXImageTransform.Microsoft.gradient(startColorstr=$lime-green, endColorstr$lime-green-pale);
+    /*Cross Browser Colour Gradient*/
+    background: -webkit-gradient(linear, center top, center bottom, from($lime-green-pale), to($lime-green));
+    background: -moz-lineaer(top, $lime-green-pale, $lime-green);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$lime-green', endColorstr='$lime-green-pale');
+
 
     background-color:$lime-green;
 	border-top:1px solid $gray;
@@ -218,6 +244,7 @@ footer {
 		}
 	
 		div#footer-right {
+		    padding-top:10px;
 			text-align:center;
 			float:right;
 	        padding-right:10px;
