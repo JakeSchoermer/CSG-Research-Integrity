@@ -25,6 +25,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'nifty-generators'
+  gem 'google-analytics'
 end
 
 

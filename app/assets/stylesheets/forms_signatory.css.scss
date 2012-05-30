@@ -1,0 +1,11 @@
+/* Stylesheet to be used to over-ride styles in forms.css.scss for the Petition*/
+
+form#new_signatory {
+    width:800px;
+}
+
+textarea#signatory_message {
+    height:125px;
+    width:400px;
+
+}

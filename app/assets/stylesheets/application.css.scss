@@ -12,6 +12,7 @@
  *= require_tree .
 */
 
+$bg-color:#1F1D1D;
 $lime-green:#4f9000;
 $lime-green-pale:#93c05c;
 $gray:#666;
@@ -35,7 +36,7 @@ $gray:#666;
 html, body {
     background-position:center;
     background-attachment:fixed;
-    background-color:black;
+    background-color:$bg-color;
     padding:0;
     margin:0;
     min-width:960px;
