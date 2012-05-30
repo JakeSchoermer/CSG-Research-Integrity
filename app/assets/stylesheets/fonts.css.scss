@@ -22,7 +22,6 @@ $gray2:#6A6E7F;
     font-style: normal;
 
 }
-
 //=============================================================================
 
 
@@ -36,6 +35,8 @@ header {
 
     a {text-decoration:none; color:white}
     a:hover {color:$orange;}
+
+    h1 {font-size:36px};
 }
 
 div#content {
