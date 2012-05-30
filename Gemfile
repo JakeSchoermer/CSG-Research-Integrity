@@ -7,12 +7,12 @@ gem 'rails', '3.2.1'
 
 group :development, :test do
   gem 'mysql2'
-  #gem 'rack-google_analytics', :require => "rack/google-analytics"
+
 end
 group :production do
   gem 'pg'
   gem 'thin'
-  #gem 'rack-google_analytics', :require => "rack/google-analytics"
+  gem 'google-analytics-rails'
 end
 
 

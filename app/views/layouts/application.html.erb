@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Coal Seam Gas | Research Integrity</title>
-  <%= stylesheet_link_tag "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tag %>
-	
-  <%= yield(:head) %>
-<%= init_tinymce_hammer_if_required %>
+    <title>Coal Seam Gas | Research Integrity</title>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tag %>
+
+    <%= yield(:head) %>
+    <%= init_tinymce_hammer_if_required %>
+
+    <%= analytics_init if Rails.env.production? %>
+
+<!--Meta Tags -->
+<meta name="description" content="The Research Integrity Coalition is a volunteer student organisation dedicated to
+ensuring that the Centre for Coal Seam Gas at the University of Queensland, St Lucia maintains academic integrity and
+transparency" />
+<meta name="author" content="Research Integrity Coalition"/>
+    <meta name="author" content="UQ Environment Collective"/>
+    <meta name="author" content="UQ Climate for Change"/>
+    <meta name="author" content="Jake Schoermer"/>
+    <meta name="author" content="Abraham O'Neill"/>
+    <meta name="author" content="Giovanni Sottile"/>
+<meta name="keywords" content="Coal Seam Gas, CSG, Sustainable Minerals Institute, Centre for Coal Seam Gas, Chris Moran"/>
+<!-- End Meta Tags -->
+
 </head>
 <body>
 	

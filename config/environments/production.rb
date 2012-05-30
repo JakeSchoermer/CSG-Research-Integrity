@@ -67,5 +67,7 @@ CSGResearchIntegrity::Application.configure do
   
   #For Devise
   config.assets.initialize_on_precompile = false
-  
+
+  GA.tracker = "UA-16364154-7"
+
 end

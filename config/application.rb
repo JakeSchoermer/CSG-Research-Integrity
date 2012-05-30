@@ -57,11 +57,5 @@ module CSGResearchIntegrity
     config.assets.version = '1.0'
 
 
-    #Google Analytics
-
-    #3f Rails.env == "production"
-    #config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-16364154-7")
-    #end
-
   end
 end
