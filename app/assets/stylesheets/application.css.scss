@@ -112,7 +112,7 @@ header {
     /*Cross Browser Colour Gradient*/
     background: -webkit-gradient(linear, center top, center bottom, from($lime-green-pale), to($lime-green));
     background: -moz-lineaer(top, $lime-green-pale, $lime-green);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$lime-green', endColorstr='$lime-green-pale');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f9000', endColorstr='#93c05c');
 
     div#header-inner {
         width:830px;
@@ -207,7 +207,7 @@ footer {
     /*Cross Browser Colour Gradient*/
     background: -webkit-gradient(linear, center top, center bottom, from($lime-green-pale), to($lime-green));
     background: -moz-lineaer(top, $lime-green-pale, $lime-green);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$lime-green', endColorstr='$lime-green-pale');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f9000', endColorstr='#93c05c');
 
 
     background-color:$lime-green;
