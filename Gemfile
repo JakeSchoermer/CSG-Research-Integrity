@@ -12,7 +12,6 @@ end
 group :production do
   gem 'pg'
   gem 'thin'
-  gem 'google-analytics-rails'
 end
 
 
@@ -35,6 +34,7 @@ gem 'jquery-rails'
 gem 'devise', '~> 1.4.9'
 gem "tinymce_hammer", "~> 0.2.2"
 gem 'friendly_id'   #Helps re-write pretty urls
+gem 'google-analytics-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
