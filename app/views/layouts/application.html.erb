@@ -21,7 +21,7 @@
 			</ul>
 			<ul class="right">
 				<li>
-
+					<%= link_to("Logout", "/admin_user/logout") %>
 				</li>
 			</ul>
 		</div>
@@ -42,7 +42,7 @@
                 <li><%= link_to "Contact", "/pages/contact"%></li>
 				<li><%= link_to "Sign the Petition", {:controller => "signatories", :action => "new"}%></li>
 			</ul>
-			<%= image_tag("socialmedia-icons/facebook.png", :size =>"64x64", :alt => "Facebook Campaign Page", :id=>"facebook_icon")%>
+			<%= link_to image_tag("socialmedia-icons/facebook.png", :size =>"64x64", :alt => "Facebook Campaign Page", :id=>"facebook_icon"), "https://www.facebook.com/#!/CentreforCoalSeamGas"%>
 		</nav>
 			
 		<div id="content">
@@ -68,7 +68,7 @@
                 <p>Content &copy; Copyright <%= Date.current.to_s[0...4] %> Research Integrity Coalition </p>
                 <%if !admin_signed_in?%>
                         <%= link_to 'Admin Logon', "/admin_user/login" %>
-                 <%end%>
+               	<%end%>
 
 			</div> <!-- End #footer-middle-->
 			<div id ="footer-right" class="footer-section">
