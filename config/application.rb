@@ -59,9 +59,9 @@ module CSGResearchIntegrity
 
     #Google Analytics
 
-    if Rails.env == "production"
-      config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-16364154-7")
-    end
+    #3f Rails.env == "production"
+    #  config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-16364154-7")
+    #end
 
   end
 end
