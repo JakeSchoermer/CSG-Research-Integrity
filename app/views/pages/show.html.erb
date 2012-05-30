@@ -5,8 +5,10 @@
 <%=simple_format  raw @page.content %>
 
 
+<%if admin_signed_in?%>
 <p>
   <%= link_to "Edit", edit_page_path(@page) %> |
   <%= link_to "Destroy", @page, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", pages_path %>
 </p>
+<%end%>
