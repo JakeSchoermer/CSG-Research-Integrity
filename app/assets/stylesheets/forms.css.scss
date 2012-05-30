@@ -15,7 +15,7 @@
 		}
 	form h3{
 		margin:0;
-		background:#57a700 url("form2/form_heading.gif") repeat-x;		
+		background:#57a700 url("form/form_heading.gif") repeat-x;		
 		color:#fff;
 		
 		font-size:20px;
@@ -25,14 +25,14 @@
 	form h3 span{
 		display:block;
 		padding:10px 20px;
-		background:url("form2/form_ico.gif") no-repeat 93% 50%;			
+		background:url("form/form_ico.gif") no-repeat 93% 50%;			
 		}				
 	form fieldset{
 		margin:0;
 		padding:0;
 		border:none;	
 		border-top:3px solid #000;
-		background:#000 url("form2/form_top.gif") repeat-x;		
+		background:#000 url("form/form_top.gif") repeat-x;		
 		padding-bottom:1em;
 		}		
 	form legend{display:none;}	
@@ -40,7 +40,7 @@
 	form label{display:block;}	
 	form input, form textarea{
 		border:1px solid #111;
-		background:#282828 url("form2/form_input.gif") repeat-x;
+		background:#282828 url("form/form_input.gif") repeat-x;
 		padding:5px 3px;
 		color:#fff;
 		}		
@@ -58,7 +58,7 @@
 		height:32px;
 		line-height:32px;		
 		border:1px solid #70ad2e;
-		background:#5aae00 url("form2/form_button.gif") repeat-x;
+		background:#5aae00 url("form/form_button.gif") repeat-x;
 		color:#fff;
 		cursor:pointer;		
 		text-align:center;
