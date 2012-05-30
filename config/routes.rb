@@ -14,7 +14,7 @@ CSGResearchIntegrity::Application.routes.draw do
   
   get "home/index"
 
-  root :to => "home#index", :id => 1;
+  root :to => "pages#show", :id => 1;
   
   
   
